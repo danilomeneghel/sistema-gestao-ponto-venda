@@ -1,12 +1,55 @@
-.docker/
-.vscode/
-database/backups/
-/vendor/
-public/storage
-public/hot
-storage/*.key
-.env.*.php
-.env.php
-.env
-Homestead.yaml
-Homestead.json
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# IntelliJ
+.idea
+*.ipr
+*.iml
+*.iws
+
+# NetBeans
+nb-configuration.xml
+
+# Visual Studio Code
+.vscode
+
+# OSX
+.DS_Store
+
+# Vim
+*.swp
+*.swo
+
+# patch
+*.orig
+*.rej
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+release.properties
+
+lsp/
+
+/.java-version
+.sts4-cache
+
+vendor/
+.docker
