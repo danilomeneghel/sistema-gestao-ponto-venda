@@ -13,11 +13,11 @@ return [
     |
     */
 
-    'title' => "Controle",
+    'title' => "PDV",
 
     'title_prefix' => '',
 
-    'title_postfix' => " - Sistema Gerencial",
+    'title_postfix' => " - Gestão de Ponto de Vendas",
     
     /*
     |--------------------------------------------------------------------------
@@ -49,7 +49,7 @@ return [
     |
     */
 
-    'logo' => env('ADM_LOGO', 'PDV <b>Laravel</b>'),
+    'logo' => env('ADM_LOGO', 'PDV <b>Vendas</b>'),
     'logo_mini' => env('ADM_LOGO_MIN', 'P<b>L</b>'),
 
     /*

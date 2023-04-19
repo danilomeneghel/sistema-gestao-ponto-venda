@@ -2,17 +2,16 @@
 
 Sistema PDV feito em Laravel para gestão de vendas.
 
-## Caracteríticas
+## Módulos
 
-- OAuth
 - Login
-- Rotas
-- CRUD
-- DataTable
-- Filtro
-- Paginador
-- View Blade
-- Responsivo
+- Vendas
+- Caixa
+- Clientes
+- Transações
+- Estoque
+- Produtos
+- Relatório de Vendas
 
 ## Requisitos
 
