@@ -17,7 +17,7 @@ return [
 
     'title_prefix' => '',
 
-    'title_postfix' => " - Gestão de Ponto de Vendas",
+    'title_postfix' => " - Gestão de Ponto de Venda",
     
     /*
     |--------------------------------------------------------------------------

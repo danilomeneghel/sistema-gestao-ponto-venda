@@ -14,7 +14,7 @@
           <img src="{{ asset('images/logo.png') }}" width="345" height="160">
         </div>
         <div class="login-box-body">
-            <p class="login-box-msg">Gestão de Ponto de Vendas</p>
+            <p class="login-box-msg">Gestão de Ponto de Venda</p>
             <form action="{{ url(config('adminlte.login_url', 'login')) }}" method="post">
                 {!! csrf_field() !!}
 
