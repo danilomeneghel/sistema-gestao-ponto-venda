@@ -1,6 +1,6 @@
 # PDV - Gestão de Ponto de Venda
 
-Sistema PDV feito em PHP com Laravel para gestão de venda.
+Sistema PDV desenvolvido em PHP com Laravel para gestão de venda.
 
 ## Módulos
 
