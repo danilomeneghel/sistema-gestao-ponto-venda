@@ -3,7 +3,7 @@
 @section('title', 'Dashboard')
 
 @section('content_header')
-    <h1>Dashboard</h1>
+    <h1>Painel Principal</h1>
 @stop
 
 @section('content')
@@ -17,7 +17,7 @@
             <div class="icon">
                 <i class="ion ion-person-stalker"></i>
             </div>
-            <a href="{{route('clientes.todos')}}" class="small-box-footer">Clientes <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="{{route('clientes.todos')}}" class="small-box-footer">Abrir clientes <i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
     <div class="col-sm-3">
@@ -29,7 +29,7 @@
             <div class="icon">
                 <i class="ion ion-bag"></i>
             </div>
-            <a href="{{route('historico')}}" class="small-box-footer">Abrir <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="{{route('historico')}}" class="small-box-footer">Abrir vendas<i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
     <div class="col-sm-3">
