@@ -195,7 +195,7 @@ return [
         ],
         'TRANSAÇÕES',
         [
-            'text' => 'Consulta',
+            'text' => 'Histórico',
             'url'  => 'historico/'
         ],
         'ESTOQUE',

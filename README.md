@@ -16,7 +16,7 @@ Sistema PDV feito em PHP com Laravel para gestão de venda.
 ## Requisitos
 
 - PHP >= 7.4.33
-- MySql >=5
+- MySql >= 5
 - Composer
 
 ## Tecnologia
@@ -33,15 +33,22 @@ Sistema PDV feito em PHP com Laravel para gestão de venda.
 
 ## Instalação
 
-Criar Banco de Dados Mysql com nome 'pdv':
+Crie um banco de dados com o nome "pdv" no seu Mysql.<br>
+Abra o arquivo .env e efetue a configuração correta para conexão do seu banco de dados.<br>
 
 ```
-$ mysql -u <your user> -p <your password>
+$ mysql -u <your user> -p
 
 mysql> create database `pdv`;
 ```
-OBS: Editar o arquivo .env conforme os dados de conexão do banco de dados.<br>
-Após configurar o banco, rodar o seguinte comando:
+
+Após criado o banco de dados, abra o terminal e execute o seguinte comando:
+
+```
+$ ./install.sh
+```
+
+Caso de algum erro e não consiga instalar, execute os seguintes comandos separadamente:
 
 ```
 $ composer install
@@ -51,7 +58,11 @@ $ php artisan key:generate
 $ php artisan migrate
 
 $ php artisan db:seed
+```
 
+Depois de realizado isso, rode o projeto:
+
+```
 $ php artisan serve
 ```
 

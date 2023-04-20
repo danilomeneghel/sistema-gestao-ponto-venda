@@ -10,7 +10,7 @@
 @section('body')
 <div class="register-box">
     <div class="logo-login">
-      <img src="{{ asset('images/logo.png') }}" width="345" height="160">
+      <img src="{{ asset('images/logo.png') }}" width="350">
     </div>
     <div class="register-box-body">
         <p class="login-box-msg">Criar conta</p>

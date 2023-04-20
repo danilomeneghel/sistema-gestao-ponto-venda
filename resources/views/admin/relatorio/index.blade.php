@@ -40,7 +40,7 @@
     <div class="row">
         <div class="col-md-6">
             <div class="box">
-            <div class="box-header with-border">
+                <div class="box-header with-border">
                     <h3 class="box-title">Venda anual</h3>
                 </div>
                 <canvas id="vendasChart"></canvas>

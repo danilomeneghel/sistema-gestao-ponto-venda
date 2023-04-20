@@ -10,7 +10,7 @@
 @section('body')
     <div class="login-box">
         <div class="logo-login">
-          <img src="{{ asset('images/logo.png') }}" width="345" height="160">
+          <img src="{{ asset('images/logo.png') }}" width="350">
         </div>
         <div class="login-box-body">
             <p class="login-box-msg">Alterar senha</p>
