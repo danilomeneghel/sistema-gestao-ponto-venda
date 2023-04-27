@@ -18,6 +18,7 @@ Sistema PDV desenvolvido em PHP com Laravel para gestão de venda.
 - PHP >= 7.4.33
 - MySql >= 5
 - Composer
+- Docker (opcional)
 
 ## Tecnologia
 
@@ -33,21 +34,34 @@ Sistema PDV desenvolvido em PHP com Laravel para gestão de venda.
 
 ## Instalação
 
+### Docker
+Abra o terminal e execute o seguite comando:
+
+```
+$ docker-compose up
+```
+
+OBS: É necessário ter o Docker e docker-compose instalado.
+Caso não tenha instalado o Docker ou dê alguma falha na instalação, tente com os comandos abaixo.
+
+### MySql
 Crie um banco de dados com o nome "pdv" no seu Mysql.<br>
 Abra o arquivo .env e efetue a configuração correta para conexão do seu banco de dados.<br>
 
 ```
-$ mysql -u <your user> -p
+$ mysql -u<seu usuário> -p<sua senha>
 
 mysql> create database `pdv`;
 ```
 
+### Bash
 Após criado o banco de dados, abra o terminal e execute o seguinte comando:
 
 ```
 $ ./install.sh
 ```
 
+### Composer
 Caso de algum erro e não consiga instalar, execute os seguintes comandos separadamente:
 
 ```

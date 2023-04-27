@@ -1,4 +1,5 @@
 #!/bin/bash
+sleep 10
 composer update
 composer install
 php artisan key:generate
