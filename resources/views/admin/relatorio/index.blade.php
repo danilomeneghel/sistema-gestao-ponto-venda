@@ -66,7 +66,7 @@
     var marc = document.getElementById("marcasVendas");
   
     var myChart = new Chart(ctx, {
-        type: 'line',
+        type: 'bar',
         data :  data,
         options: {
             legend: {
