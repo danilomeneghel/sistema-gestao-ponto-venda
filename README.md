@@ -16,7 +16,7 @@ Sistema PDV desenvolvido em PHP com Laravel para gestão de venda.
 ## Requisitos
 
 - PHP >= 7.4.33
-- MySql >= 5
+- MySql >= 8
 - Composer
 - Docker (opcional)
 

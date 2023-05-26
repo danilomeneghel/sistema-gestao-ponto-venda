@@ -1,5 +1,5 @@
 #!/bin/bash
-sleep 25
+sleep 20
 composer update
 composer install
 php artisan optimize:clear
