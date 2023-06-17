@@ -3,6 +3,7 @@ version: "3"
 services:
   pdv-app:
     build: .
+    container_name: pdv-app
     volumes:
       - ./:/app
     ports:

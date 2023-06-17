@@ -20,7 +20,7 @@ Sistema PDV desenvolvido em PHP com Laravel para gestão de venda.
 - Composer
 - Docker (opcional)
 
-## Tecnologia
+## Tecnologias
 
 - PHP
 - JS
@@ -35,7 +35,7 @@ Sistema PDV desenvolvido em PHP com Laravel para gestão de venda.
 ## Instalação
 
 ### Docker
-Abra o terminal e execute o seguite comando:
+Abra o terminal e execute o seguinte comando:
 
 ```
 $ docker-compose up
