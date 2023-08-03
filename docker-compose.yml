@@ -14,7 +14,7 @@ services:
       - mysql-db
     command: sh -c "./install.sh"
   mysql-db:
-    image: mysql:8
+    image: mysql:8.0.30
     container_name: mysql-db
     volumes:
       - ./:/mysql
