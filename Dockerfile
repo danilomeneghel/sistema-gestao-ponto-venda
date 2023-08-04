@@ -1,4 +1,5 @@
 FROM php:7.4.0-apache
+FROM httpd:2.4
 
 RUN apt-get update && apt-get install -y \
     build-essential \
