@@ -19,10 +19,10 @@ services:
     volumes:
       - ./:/mysql
     environment:
-      MYSQL_ROOT_HOST='${DB_HOST}'
-      MYSQL_DATABASE='${DB_DATABASE}'
-      MYSQL_PASSWORD='${DB_PASSWORD}'
-      MYSQL_ROOT_PASSWORD='${DB_PASSWORD}'
+      MYSQL_ROOT_HOST: '${DB_HOST}'
+      MYSQL_DATABASE: '${DB_DATABASE}'
+      MYSQL_PASSWORD: '${DB_PASSWORD}'
+      MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
     ports:
       - "${DB_PORT}:${DB_PORT}"
     networks:
