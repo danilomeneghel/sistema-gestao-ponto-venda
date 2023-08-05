@@ -22,5 +22,9 @@ RUN docker-php-ext-configure pdo_mysql --with-pdo-mysql=mysqlnd \
 RUN curl -sS https://getcomposer.org/installer​ | php -- \
      --install-dir=/usr/local/bin --filename=composer
 
+RUN echo "ServerName https://sistema-gestao-ponto-venda-production.up.railway.app" >> /etc/apache2/apache2.conf
+RUN service apache2 restart
+RUN systemctl restart apache2
+
 COPY . .
 
