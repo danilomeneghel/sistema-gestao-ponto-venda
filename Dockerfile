@@ -24,7 +24,6 @@ RUN curl -sS https://getcomposer.org/installer​ | php -- \
 
 RUN echo "ServerName https://sistema-gestao-ponto-venda-production.up.railway.app" >> /etc/apache2/apache2.conf
 RUN service apache2 restart
-RUN systemctl restart apache2
 
 COPY . .
 
