@@ -5,12 +5,12 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": "^7.3|^8.0",
+        "php": "^7.2.5|^8.0",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
-        "jeroennoten/laravel-adminlte": "^3.0",
-        "laravel/framework": "^8.12",
+        "jeroennoten/laravel-adminlte": "^3.9.1",
+        "laravel/framework": "^7.0",
         "laravel/tinker": "^2.5"
     },
     "require-dev": {
@@ -32,7 +32,7 @@
             "symfony/thanks": true
         },
         "platform": {
-            "php": "7.4"
+            "php": "7.2.5"
         }
     },
     "extra": {
