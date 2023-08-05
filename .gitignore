@@ -51,6 +51,3 @@ lsp/
 /.java-version
 .sts4-cache
 
-composer.lock
-vendor/
-.docker
