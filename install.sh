@@ -1,7 +1,5 @@
 #!/bin/bash
 sleep 12
-composer dump-autoload
-composer update --no-scripts
 composer install
 php artisan optimize:clear
 php artisan key:generate
