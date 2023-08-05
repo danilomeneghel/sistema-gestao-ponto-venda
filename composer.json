@@ -30,11 +30,16 @@
         "allow-plugins": {
             "kylekatarnls/update-helper": true,
             "symfony/thanks": true
+        },
+        "platform": {
+            "php": "7.4"
         }
     },
     "extra": {
         "laravel": {
-            "dont-discover": []
+            "dont-discover": [
+                "laravel/dusk"
+            ]
         }
     },
     "autoload": {
