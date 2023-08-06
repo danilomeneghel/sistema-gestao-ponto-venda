@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit62d4daf57753c54f5dcb428fd2cbb1e1
+class ComposerStaticInit41c9fb668f37badf9aee02653388ff86
 {
     public static $files = array (
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
@@ -28,6 +28,7 @@ class ComposerStaticInit62d4daf57753c54f5dcb428fd2cbb1e1
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
+        '17d016dc52a631c1e74d2eb8fdd57342' => __DIR__ . '/..' . '/laravel/helpers/src/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -111,6 +112,7 @@ class ComposerStaticInit62d4daf57753c54f5dcb428fd2cbb1e1
             'League\\CommonMark\\' => 18,
             'Laravel\\Ui\\' => 11,
             'Laravel\\Tinker\\' => 15,
+            'Laravel\\Sanctum\\' => 16,
         ),
         'J' => 
         array (
@@ -362,6 +364,10 @@ class ComposerStaticInit62d4daf57753c54f5dcb428fd2cbb1e1
         'Laravel\\Tinker\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/tinker/src',
+        ),
+        'Laravel\\Sanctum\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel/sanctum/src',
         ),
         'JeroenNoten\\LaravelAdminLte\\' => 
         array (
@@ -2252,6 +2258,25 @@ class ComposerStaticInit62d4daf57753c54f5dcb428fd2cbb1e1
         'JeroenNoten\\LaravelAdminLte\\View\\Components\\Widget\\Progress' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/View/Components/Widget/Progress.php',
         'JeroenNoten\\LaravelAdminLte\\View\\Components\\Widget\\SmallBox' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/View/Components/Widget/SmallBox.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
+        'Laravel\\Sanctum\\Console\\Commands\\PruneExpired' => __DIR__ . '/..' . '/laravel/sanctum/src/Console/Commands/PruneExpired.php',
+        'Laravel\\Sanctum\\Contracts\\HasAbilities' => __DIR__ . '/..' . '/laravel/sanctum/src/Contracts/HasAbilities.php',
+        'Laravel\\Sanctum\\Contracts\\HasApiTokens' => __DIR__ . '/..' . '/laravel/sanctum/src/Contracts/HasApiTokens.php',
+        'Laravel\\Sanctum\\Events\\TokenAuthenticated' => __DIR__ . '/..' . '/laravel/sanctum/src/Events/TokenAuthenticated.php',
+        'Laravel\\Sanctum\\Exceptions\\MissingAbilityException' => __DIR__ . '/..' . '/laravel/sanctum/src/Exceptions/MissingAbilityException.php',
+        'Laravel\\Sanctum\\Exceptions\\MissingScopeException' => __DIR__ . '/..' . '/laravel/sanctum/src/Exceptions/MissingScopeException.php',
+        'Laravel\\Sanctum\\Guard' => __DIR__ . '/..' . '/laravel/sanctum/src/Guard.php',
+        'Laravel\\Sanctum\\HasApiTokens' => __DIR__ . '/..' . '/laravel/sanctum/src/HasApiTokens.php',
+        'Laravel\\Sanctum\\Http\\Controllers\\CsrfCookieController' => __DIR__ . '/..' . '/laravel/sanctum/src/Http/Controllers/CsrfCookieController.php',
+        'Laravel\\Sanctum\\Http\\Middleware\\CheckAbilities' => __DIR__ . '/..' . '/laravel/sanctum/src/Http/Middleware/CheckAbilities.php',
+        'Laravel\\Sanctum\\Http\\Middleware\\CheckForAnyAbility' => __DIR__ . '/..' . '/laravel/sanctum/src/Http/Middleware/CheckForAnyAbility.php',
+        'Laravel\\Sanctum\\Http\\Middleware\\CheckForAnyScope' => __DIR__ . '/..' . '/laravel/sanctum/src/Http/Middleware/CheckForAnyScope.php',
+        'Laravel\\Sanctum\\Http\\Middleware\\CheckScopes' => __DIR__ . '/..' . '/laravel/sanctum/src/Http/Middleware/CheckScopes.php',
+        'Laravel\\Sanctum\\Http\\Middleware\\EnsureFrontendRequestsAreStateful' => __DIR__ . '/..' . '/laravel/sanctum/src/Http/Middleware/EnsureFrontendRequestsAreStateful.php',
+        'Laravel\\Sanctum\\NewAccessToken' => __DIR__ . '/..' . '/laravel/sanctum/src/NewAccessToken.php',
+        'Laravel\\Sanctum\\PersonalAccessToken' => __DIR__ . '/..' . '/laravel/sanctum/src/PersonalAccessToken.php',
+        'Laravel\\Sanctum\\Sanctum' => __DIR__ . '/..' . '/laravel/sanctum/src/Sanctum.php',
+        'Laravel\\Sanctum\\SanctumServiceProvider' => __DIR__ . '/..' . '/laravel/sanctum/src/SanctumServiceProvider.php',
+        'Laravel\\Sanctum\\TransientToken' => __DIR__ . '/..' . '/laravel/sanctum/src/TransientToken.php',
         'Laravel\\Tinker\\ClassAliasAutoloader' => __DIR__ . '/..' . '/laravel/tinker/src/ClassAliasAutoloader.php',
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',
         'Laravel\\Tinker\\TinkerCaster' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerCaster.php',
@@ -5010,10 +5035,10 @@ class ComposerStaticInit62d4daf57753c54f5dcb428fd2cbb1e1
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit62d4daf57753c54f5dcb428fd2cbb1e1::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit62d4daf57753c54f5dcb428fd2cbb1e1::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit62d4daf57753c54f5dcb428fd2cbb1e1::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit62d4daf57753c54f5dcb428fd2cbb1e1::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit41c9fb668f37badf9aee02653388ff86::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit41c9fb668f37badf9aee02653388ff86::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit41c9fb668f37badf9aee02653388ff86::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit41c9fb668f37badf9aee02653388ff86::$classMap;
 
         }, null, ClassLoader::class);
     }
