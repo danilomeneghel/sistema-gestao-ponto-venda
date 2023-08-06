@@ -77,13 +77,13 @@ $ php artisan db:seed
 Depois de realizado isso, rode o projeto:
 
 ```
-$ php artisan serve --host=0.0.0.0 --port=80
+$ php artisan serve --host=0.0.0.0 --port=8000
 ```
 
 ## Acesso ao Sistema 
 
 Para acessar o sistema utilize o seguinte endereço:<br>
-http://localhost
+http://localhost:8000
 
 - Login: <br>
     - Usuário: admin<br>
