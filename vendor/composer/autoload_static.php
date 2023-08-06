@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInita3e795b8a4ebd89c8a41f299892ddee4
+class ComposerStaticInitb58f1baa148d1457dc4c6c70658d26a0
 {
     public static $files = array (
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
@@ -465,9 +465,12 @@ class ComposerStaticInita3e795b8a4ebd89c8a41f299892ddee4
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
+        'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
+        'App\\Http\\Middleware\\PreventRequestsDuringMaintenance' => __DIR__ . '/../..' . '/app/Http/Middleware/PreventRequestsDuringMaintenance.php',
         'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
+        'App\\Http\\Middleware\\TrustHosts' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustHosts.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Mail\\ResetPassword' => __DIR__ . '/../..' . '/app/Mail/ResetPassword.php',
@@ -486,7 +489,6 @@ class ComposerStaticInita3e795b8a4ebd89c8a41f299892ddee4
         'App\\Models\\Sangria' => __DIR__ . '/../..' . '/app/Models/Sangria.php',
         'App\\Models\\Sistema' => __DIR__ . '/../..' . '/app/Models/Sistema.php',
         'App\\Models\\Transacoes' => __DIR__ . '/../..' . '/app/Models/Transacoes.php',
-        'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Models\\Venda' => __DIR__ . '/../..' . '/app/Models/Venda.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
@@ -602,6 +604,7 @@ class ComposerStaticInita3e795b8a4ebd89c8a41f299892ddee4
         'Cron\\HoursField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/HoursField.php',
         'Cron\\MinutesField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MinutesField.php',
         'Cron\\MonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MonthField.php',
+        'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
         'DeepCopy\\DeepCopy' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
         'DeepCopy\\Exception\\CloneException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/CloneException.php',
         'DeepCopy\\Exception\\PropertyException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/PropertyException.php',
@@ -5005,10 +5008,10 @@ class ComposerStaticInita3e795b8a4ebd89c8a41f299892ddee4
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInita3e795b8a4ebd89c8a41f299892ddee4::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInita3e795b8a4ebd89c8a41f299892ddee4::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInita3e795b8a4ebd89c8a41f299892ddee4::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInita3e795b8a4ebd89c8a41f299892ddee4::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitb58f1baa148d1457dc4c6c70658d26a0::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitb58f1baa148d1457dc4c6c70658d26a0::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitb58f1baa148d1457dc4c6c70658d26a0::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitb58f1baa148d1457dc4c6c70658d26a0::$classMap;
 
         }, null, ClassLoader::class);
     }
