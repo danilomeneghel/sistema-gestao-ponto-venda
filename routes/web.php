@@ -78,9 +78,6 @@ Route::group(['middleware' => ['auth'], 'namespace' => 'Admin'], function () {
     //Configurações
     Route::get('admin/settings', 'UserSettings@index')->name('UserSettings.index');
     Route::post('admin/settings', 'UserSettings@edit')->name('UserSettings.edit');
-});
-
-Route::group(['middleware' => ['auth'], 'namespace' => 'Auth'], function () {
     //Auth
     Route::get('/logout', 'LoginController@logout');
     Route::get('/register', 'RegisterController@index');

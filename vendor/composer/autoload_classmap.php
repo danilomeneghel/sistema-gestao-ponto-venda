@@ -47,7 +47,6 @@ return array(
     'App\\Models\\Sangria' => $baseDir . '/app/Models/Sangria.php',
     'App\\Models\\Sistema' => $baseDir . '/app/Models/Sistema.php',
     'App\\Models\\Transacoes' => $baseDir . '/app/Models/Transacoes.php',
-    'App\\Models\\User' => $baseDir . '/app/Models/User.php',
     'App\\Models\\Venda' => $baseDir . '/app/Models/Venda.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\Providers\\AuthServiceProvider' => $baseDir . '/app/Providers/AuthServiceProvider.php',
