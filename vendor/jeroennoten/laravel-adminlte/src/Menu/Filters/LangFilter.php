@@ -3,26 +3,84 @@
 namespace JeroenNoten\LaravelAdminLte\Menu\Filters;
 
 use Illuminate\Translation\Translator;
-use JeroenNoten\LaravelAdminLte\Menu\Builder;
 
 class LangFilter implements FilterInterface
 {
-    protected $langGenerator;
+    /**
+     * The translator instance.
+     *
+     * @var Translator
+     */
+    protected $translator;
 
-    public function __construct(Translator $langGenerator)
+    /**
+     * The array of menu item properties to translate.
+     *
+     * @var array
+     */
+    protected $itemProperties;
+
+    /**
+     * Constructor.
+     *
+     * @param  Translator  $translator
+     */
+    public function __construct(Translator $translator)
     {
-        $this->langGenerator = $langGenerator;
+        $this->translator = $translator;
+        $this->itemProperties = ['header', 'text', 'label'];
     }
 
-    public function transform($item, Builder $builder)
+    /**
+     * Transforms a menu item. Makes the item translations.
+     *
+     * @param  array  $item  A menu item
+     * @return array The transformed menu item
+     */
+    public function transform($item)
     {
-        if (isset($item['header'])) {
-            $item['header'] = ($this->langGenerator->has('adminlte::menu.'.$item['header'])) ? $this->langGenerator->trans('adminlte::menu.'.$item['header']) : $item['header'];
-        }
-        if (isset($item['text'])) {
-            $item['text'] = ($this->langGenerator->has('adminlte::menu.'.$item['text'])) ? $this->langGenerator->trans('adminlte::menu.'.$item['text']) : $item['text'];
+        // Translate the menu item properties.
+
+        foreach ($this->itemProperties as $prop) {
+            // Check if the property exists for the item.
+
+            if (! isset($item[$prop])) {
+                continue;
+            }
+
+            // Check if the property value is valid for be translated.
+
+            if (is_array($item[$prop])) {
+                $params = $item[$prop][1] ?? [];
+                $params = is_array($params) ? $params : [];
+                $item[$prop] = $this->getTranslation($item[$prop][0], $params);
+            } elseif (is_string($item[$prop])) {
+                $item[$prop] = $this->getTranslation($item[$prop]);
+            }
         }
 
         return $item;
+    }
+
+    /**
+     * Gets the translation for a given key.
+     *
+     * @param  string  $key  The key to translate
+     * @param  array  $params  The additional translation params
+     * @return string The translation
+     */
+    protected function getTranslation($key, $params = [])
+    {
+        // Check for a translation.
+
+        if ($this->translator->has('menu.'.$key)) {
+            return $this->translator->get('menu.'.$key, $params);
+        } elseif ($this->translator->has('adminlte::menu.'.$key)) {
+            return $this->translator->get('adminlte::menu.'.$key, $params);
+        }
+
+        // When no translation available, return the original key.
+
+        return $key;
     }
 }

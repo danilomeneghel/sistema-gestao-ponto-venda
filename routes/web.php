@@ -16,7 +16,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-$this->group(['middleware' => ['auth'], 'namespace' => 'Admin'], function () {
+Route::group(['middleware' => ['auth'], 'namespace' => 'Admin'], function () {
     Route::get('/', 'AdminController@index')->name('home');
     Route::get('/clientes/cadastrar', 'ClientesController@index')->name('clientes.cadastrar');
     Route::post('/clientes/save', 'ClientesController@cadastrar')->name('clientes.save');
@@ -80,7 +80,7 @@ $this->group(['middleware' => ['auth'], 'namespace' => 'Admin'], function () {
     Route::post('admin/settings', 'UserSettings@edit')->name('UserSettings.edit');
 });
 
-$this->group(['middleware' => ['auth'], 'namespace' => 'Auth'], function () {
+Route::group(['middleware' => ['auth'], 'namespace' => 'Auth'], function () {
     //Auth
     Route::get('/logout', 'LoginController@logout');
     Route::get('/register', 'RegisterController@index');
